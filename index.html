@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ishita's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+<style>
+body {
+ background-color: white;
+ 
+ }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: sticky;
+ 
+}
+
+li {
+  float: left;
+  font-size: larger;
+  font-family:Arial, Helvetica, sans-serif;
+  border-right: 2px solid black;
+  color: black;
+}
+li:last-child {
+  border-right: none;
+}
+
+
+li a {
+  display: block;
+ text-decoration: none;
+  text-align : center;
+  padding: 14px 20px;
+  color:white;
+  
+}
+
+li a:hover {
+  background-color:white;
+  color: black;
+}
+.navbar{
+    border-bottom: 2px solid black;
+    position: fixed;
+    background-color:rgb(55, 55, 55);
+    width: 100%;
+    top: 0px;
+}
+.name{
+    float: right;
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-family:fantasy;
+    color: white;
+}
+.caps{
+    font-size: 20px;
+    color:darkred;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.word{
+  
+  
+  
+  height: 300px;
+  background-color:white;
+
+}
+.hello{
+  
+  font-size:60px;
+  color: black;
+  text-shadow: 2px red;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 80px;
+  text-shadow: 2px 2px 5px  red;
+ 
+}
+.brick{
+  font-size: 60px;
+  color: darkred;
+}
+.capss{
+  font-size: 30px;
+  font-family: fantasy;
+  color: darkred;
+  text-shadow:2px red ;
+}
+.about{
+  font-size: 50px;
+  font-family:inherit;
+  text-align: center;
+  text-decoration: underline  darkred;
+  padding-top: 10px;
+  text-shadow: 2px 2px 5px  red;
+ 
+
+}
+.aboutme{
+  font-size: 25px;
+  text-align: center;
+  bottom: 2px;
+  padding: 20px 5px 20px 5px;
+  background-color:rgb(240,240,240);
+  color: black;
+  margin-top: 0px;
+ text-shadow: 2px 2px 5px white;
+ font-family: 'Norican';
+ 
+}
+.dreams{
+  font-size: 40px;
+  font-family: cursive;
+  color: darkred;
+  text-align: center;
+  text-shadow: 2px 2px 5px  red;
+}
+.lang{
+  font-size: 50px;
+  font-family:inherit;
+  text-align: center;
+  text-decoration: underline  darkred;
+  padding-top: 250px;
+  text-shadow: 2px 2px 5px  red;
+}
+.proj{
+  font-size: 50px;
+  font-family:inherit;
+  text-align: center;
+  text-decoration: underline  darkred;
+  padding-top: 250px;
+  padding-bottom: 50px;
+  text-shadow: 2px 2px 5px  red;
+}
+  .des{
+    font-size: 35px;
+     font-family: monospace;
+     text-align: center;
+     float: right;
+     border: 2px solid darkred;
+     margin-top: 0px;
+     
+     
+  }
+
+
+
+
+  * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color:black;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: monospace;
+  background-color: white;
+  text-shadow: darkred;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px;
+  color: black;
+  }
+}
+
+
+.anim{
+ 
+ 
+ position: relative;
+ animation: mymove 5s infinite;
+ background-color:rgb(240, 240,240);
+}
+
+@keyframes mymove {
+ from {left: 0px;}
+ to {left: 400px;}
+}
+.project{
+  padding-top: 250px;
+  padding-bottom: 50px;
+}
+ .thanks{
+   font-size: 55px;
+   font-family:'arvo';
+   text-align: center;
+   text-shadow: 2px 2px 5px red;
+ }
+ .T{
+   color: darkred;
+ }
+ .footer{
+   padding-top: 10px;
+   height: 250px;
+   width: 5000px;
+   background-color: rgb(55, 55, 55);
+ }
+</style>
+</head>
+<body>
+   
+    <div class="navbar">
+        <ul class="list">
+            
+            <li><a href="#" class="Home" ><i class="fa fa-home fa-fw"></i><span class="caps">H</span>ome</a></li>
+            <li><a href="#C1" class="Interests" ><i class="fa fa-heart fa-fw"></i><span class="caps">I</span>nterests</a></li>
+            
+            <li><a href="#C2" class="Projects" ><i class="fa fa-book fa-fw"></i><span class="caps">P</span>rojects</a></li>
+            <li><a href="#C3" class="About" ><i class="fa fa-info fa-fw"></i><span class="caps">A</span>bout</a></li>
+            <li class="name"><span class="capss">I</span>SHITA <span class="capss">P</span>AHUJA</li>
+        </ul>
+    </div>
+    <div class="word">
+      <h3 class="hello">
+        <div>
+        <pre> 
+          <marquee width="60%" direction="left" height="100px"><span class="brick ">H</span>ello,<span class="brick">W</span>elcome <span class="brick">t</span>o <span class="brick ">M</span>y <span class="brick">P</span>ortfolio.</marquee>
+    
+        </pre>
+        </div>
+      </h3>
+      
+
+    </div>
+    <div>
+      <h1 class="about" id="C3"><span style="font-size: 50px; color: darkred;">A</span>BOUT <span style="color: darkred; font-size: 50px;">M</span>E!</i></h1>
+    </div>
+    <div>
+      <span><img src=""></span>
+      <span><p class="aboutme">Hey, I am Ishita.I belong to YamunaNagar, Haryana and currently persuing my B.E C.S.E. from Chitkara
+        University Rajpura,Punjab. I have completed my school from YamunaNagar only.As a CSE student I have very creative and focused 
+        approach.I believe in giving my 100% to whatever situation/problem am facing too and this mindset keeps me going.I like to explore 
+        new tech skills and learn new everyday.
+        
+      </p></span>
+      <div class="dreams">"Dreams Don't Work Unless You Do!"</div>
+    </div>
+    <div class="lang"><span  style="font-size: 50px; color: darkred;">L</span>ANGUAGES <span  style="font-size: 50px; color: darkred;">L</span>EARNED
+    </div>
+    <div style="padding-top: 50px; padding-right: 50px;">
+      <span style="padding:100px 50px 0px 435px ;"><img src="c.png" style="height: 120px; width: 120px; border-radius: 50%; border: 2px solid darkred;"></span>
+      <span style="padding:100px 50px 0px 50px ;"><img src="java.png" style="height: 120px; width: 120px; border-radius: 50%; border: 2px solid darkred;"></span>
+      <span style="padding:100px 435px 0px 50px;"><img src="web.png" style="height: 120px; width:120px; border-radius: 50%; border: 2px solid darkred; "></span>
+     
+    </div>
+    <div>
+      <div class="proj" id="C2"><span  style="font-size: 50px; color: darkred;">P</span>ROJECTS</div>
+      <div></div>
+    </div>
+    <div>
+      <div class="proj" id="C1"><span style="font-size: 50px; color: darkred;">I</span>NTERESTS</div>
+      
+    </div>
+
+
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="cooking.jpg" style="width:100%;">
+        <div class="text">COOKING</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="photo.jpg" style="width:100%;">
+        <div class="text">PHOTOGRAPHY</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="design.jfif" style="width:100%;">
+        <div class="text">FABRIC DESIGNING</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+
+<div>
+  <div class="proj"><span style="font-size: 50px; color: darkred;">C</span>ONTACT <span  style="font-size: 50px; color: darkred;">I</span>NFO</div>
+  <div style="padding-top: 50px; padding-right: 50px;">
+    <span style="padding:100px 50px 0px 550px ;"><a href="mailto:pahujaishita77@gmail.com" target="_blank"><img src="gmail.png" style="height: 150px; width: 150px; border-radius: 50%; border: 2px solid darkred;"></a></span>
+    <span style="padding:100px 170px 0px 50px ;"><a href='https://wa.me/+919034802477' target='_blank'><img src="whatsapp.jfif" style="height: 150px; width: 150px; border-radius: 50%; border: 2px solid darkred;"></a></span>
+    </div>
+</div>
+
+<div class="project">
+  <h1 class="thanks"><span class="T">T</span>HANKS <span class="T">F</span>OR <span class="T">V</span>ISITING.</h1>
+</div>
+
+<div class="footer">
+
+<div style="color: white; background-color: white; padding-top: 5px;"></div>
+<div>
+  <h1 style="color: white; padding-left: 600px; font-family:Armata; text-shadow: 2px 2px 3px darkred; ">ISHITA PAHUJA</h1>
+  <div style="padding: 0px 630px;">
+  <span><a href="https://www.linkedin.com/in/ishita-pahuja0719" target="_blank"  class="fa fa-linkedin" style="color: white; background-color: #0072b1; font-size: 30px; border-radius: 50% 50%; border: 2px solid black; padding: 10px;"></a></span>
+  <span><a href="https://www.instagram.com/ishitapahuja_/" target="_blank" class="fa fa-instagram" style="color: white; background-color:black; font-size: 30px; border-radius: 50% 50%; border: 2px solid black; padding: 10px;"></a></span>
+  <span><a href="https://github.com/ishita-77" target="_blank" class="fa fa-github" style="color: green; background-color:black; font-size: 30px; border-radius: 50% 50%; border: 2px solid black; padding: 10px;"></a></span>
+    </div>
+</div>
+</div>
+      
+    
+    
+    
+</body>
+</html>
